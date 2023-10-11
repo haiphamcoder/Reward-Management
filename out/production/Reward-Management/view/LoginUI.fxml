@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#updateLocation" onMousePressed="#getXY" prefHeight="540.0" prefWidth="825.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <left>
+      <VBox prefWidth="485.0" styleClass="pn-left" stylesheets="@styles/LoginStyleSheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="label-welcome" stylesheets="@styles/LoginStyleSheet.css" text="Welcome back!" />
+            <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/bgLogin.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <HBox styleClass="pn-top" stylesheets="@styles/LoginStyleSheet.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnClose" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="32.0" styleClass="btn-close" stylesheets="@styles/LoginStyleSheet.css" />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="pn-center" stylesheets="@styles/LoginStyleSheet.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="256.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" styleClass="login-image" />
+                  <Separator prefWidth="200.0" />
+                  <TextField fx:id="txtUsername" onAction="#login" promptText="Username" />
+                  <PasswordField fx:id="txtPassword" onAction="#login" promptText="Password" />
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#login" styleClass="btn-login" stylesheets="@styles/LoginStyleSheet.css" text="Login" />
+               </children></VBox>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

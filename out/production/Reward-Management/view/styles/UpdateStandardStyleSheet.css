@@ -1,0 +1,11 @@
+.pnMain {
+    -fx-background-color: #FFFFFF;
+    -fx-spacing: 10px;
+    -fx-padding: 10 20 10 20;
+    -fx-alignment: center;
+}
+
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
