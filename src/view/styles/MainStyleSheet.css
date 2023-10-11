@@ -1,0 +1,59 @@
+.pnMain {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 0 10 10 10;
+}
+
+.pnInfor {
+    -fx-max-height: Infinity;
+    -fx-alignment: top-center;
+    -fx-spacing: 10px;
+    -fx-background-color: #FFFFFF;
+    -fx-max-width: Infinity;
+    -fx-max-height: Infinity;
+    -fx-padding: 10px;
+}
+
+.pnUpdate {
+    -fx-alignment: right-center;
+    -fx-spacing: 10px;
+    -fx-padding: 5 0 0 0;
+    -fx-background-color: #FFFFFF;
+}
+
+.pnTitle {
+    -fx-font-family: "San-Serif";
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+    -fx-alignment: center;
+    -fx-padding: 5 0 5 0;
+}
+
+.pnDetails {
+    -fx-font-family: "San-Serif";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-alignment: center;
+}
+
+.image-view {
+    -fx-border-color: gray;
+    -fx-border-width: 2px;
+}
+
+.hbox {
+    -fx-alignment: center;
+}
+
+.btn-insert {
+    -fx-background-color: #FFFFFF;
+    -fx-font-style: italic;
+    -fx-underline: true;
+    -fx-font-family: "San-Serif";
+    -fx-font-size: 13px;
+    -fx-text-fill: blue;
+    -fx-cursor: hand;
+}
+
+#table-view .table-column {
+    -fx-alignment: center;
+}
